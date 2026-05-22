@@ -1,0 +1,24 @@
+# WordPress
+wp-content/
+wp-config.php
+
+# Composer
+vendor/
+composer.lock
+
+# Node
+node_modules/
+package-lock.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Build
+dist/
+build/
