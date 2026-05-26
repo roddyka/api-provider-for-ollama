@@ -1,6 +1,6 @@
-=== AI Provider for Ollama Local ===
+=== Promptiva Connector for Ollama ===
 Contributors: roddyka
-Tags: ai, ollama, llm, artificial-intelligence, connector, local-ai
+Tags: ai, ollama, llm, connector, local-ai
 Requires at least: 7.0
 Tested up to: 7.0
 Stable tag: 0.1.0
@@ -8,7 +8,7 @@ Requires PHP: 7.4
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-AI Provider for Ollama Local for the PHP AI Client SDK.
+Promptiva Connector for Ollama for the PHP AI Client SDK.
 
 == Description ==
 
@@ -29,7 +29,7 @@ This plugin provides Ollama integration for the PHP AI Client SDK using OpenAI-c
 
 == Installation ==
 
-1. Upload the plugin files to `/wp-content/plugins/ai-provider-for-ollama-local/`
+1. Upload the plugin files to `/wp-content/plugins/promptiva-connector-for-ollama/`
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Configure `OLLAMA_API_BASE_URL` (optional)
 

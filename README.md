@@ -1,4 +1,4 @@
-# AI Provider for Ollama Local
+# Promptiva Connector for Ollama
 
 > **Connect WordPress 7.0 AI to your own Ollama server — no API key, no cloud, no cost.**
 
@@ -47,7 +47,8 @@ Run Llama 3, Mistral, Gemma, Phi, Qwen — any model Ollama supports — and use
 ```bash
 # Clone directly into your wp-content/plugins directory
 cd /path/to/wordpress/wp-content/plugins
-git clone https://github.com/roddyka/api-provider-for-ollama.git ai-provider-for-ollama-local
+git clone https://github.com/roddyka/api-provider-for-ollama.git promptiva-connector-for-ollama
+
 ```
 
 Then activate it from **Plugins → Installed Plugins** in wp-admin.
@@ -98,7 +99,7 @@ If Ollama runs on a different machine or Docker container, just set the base URL
 ## Architecture
 
 ```
-plugin.php               ← entry point, hooks, REST endpoint, settings
+promptiva-connector-for-ollama.php  ← entry point, hooks, REST endpoint, settings
 src/
   autoload.php           ← lightweight PSR-4 autoloader (no Composer needed)
   Provider/
@@ -147,7 +148,7 @@ cd api-provider-for-ollama
 
 ### 3. Install into WordPress
 
-Symlink or copy the plugin folder into `wp-content/plugins/ai-provider-for-ollama-local/` and activate.
+Symlink or copy the plugin folder into `wp-content/plugins/promptiva-connector-for-ollama/` and activate.
 
 ### 4. Make your changes
 
@@ -159,7 +160,7 @@ The codebase is intentionally small and dependency-free (no Composer). Key exten
 | Support streaming responses | `OllamaTextGenerationModel` — override request handling |
 | Add vision/embedding models | New model class extending the base |
 | Improve the admin UI | `assets/connector-card.js` (plain React via `wp.element`) |
-| Add more config options | `OllamaConfig.php` + `plugin.php` REST callback |
+| Add more config options | `OllamaConfig.php` + `promptiva-connector-for-ollama.php` REST callback |
 
 ### 5. Open a Pull Request
 

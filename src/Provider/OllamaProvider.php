@@ -20,7 +20,7 @@ use WordPress\OllamaLocalAiProvider\Models\OllamaTextGenerationModel;
 use WordPress\OllamaLocalAiProvider\Support\OllamaConfig;
 
 /**
- * Class for the AI Provider for Ollama Local.
+ * Class for the Promptiva Connector for Ollama.
  *
  * @since 0.1.0
  */
@@ -52,9 +52,7 @@ class OllamaProvider extends AbstractApiProvider
             }
         }
 
-        throw new RuntimeException(
-            'Unsupported model capabilities: ' . implode(', ', $capabilities)
-        );
+        throw new RuntimeException('Unsupported model capabilities.');
     }
 
     /**
@@ -66,7 +64,7 @@ class OllamaProvider extends AbstractApiProvider
     {
         $providerMetadataArgs = [
             'ollama-local',
-            'Ollama Local',
+            'Promptiva Connector for Ollama',
             ProviderTypeEnum::server(),
             'https://github.com/ollama/ollama/blob/main/docs/openai.md',
             RequestAuthenticationMethod::apiKey(),

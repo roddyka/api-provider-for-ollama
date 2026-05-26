@@ -30,7 +30,7 @@ if ( wp.element && wp.components && wp.apiFetch && wp.i18n ) {
 	let data = {};
 	try {
 		const node = document.getElementById(
-			'wp-script-module-data-ai-provider-for-ollama-local/connector'
+			'wp-script-module-data-promptiva-connector-for-ollama/connector'
 		);
 		if ( node && node.textContent ) {
 			data = JSON.parse( node.textContent ) || {};
@@ -50,7 +50,7 @@ if ( wp.element && wp.components && wp.apiFetch && wp.i18n ) {
 	const restPath =
 		typeof data.restPath === 'string' && data.restPath
 			? data.restPath
-			: '/ai-provider-for-ollama-local/v1/settings';
+			: '/promptiva-connector-for-ollama/v1/settings';
 	const reachable = !! data.reachable;
 	const statusMessage =
 		typeof data.statusMessage === 'string' ? data.statusMessage : '';

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * PSR-4 autoloader for the AI Provider for Ollama Local package.
+ * PSR-4 autoloader for the Promptiva Connector for Ollama package.
  *
  * @since 0.1.0
  *
@@ -9,6 +9,10 @@
  */
 
 declare(strict_types=1);
+
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 spl_autoload_register(static function (string $class): void {
     $prefix = 'WordPress\\OllamaLocalAiProvider\\';
